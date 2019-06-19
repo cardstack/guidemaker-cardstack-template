@@ -1,20 +1,42 @@
-guidemaker-default-template
+guidemaker-cardstack-template
 ==============================================================================
 
-[Short description of the addon.]
+This addon handles style and layout of the cards.
+
+It is a modified fork of [guidemaker-default-template](https://github.com/empress/guidemaker-default-template)
+by Chris Manson.
 
 Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install guidemaker-default-template
+git clone <url>
+cd guidemaker-cardstack-template
+npm install
+```
+
+Local development
+------------------------------------------------------------------------------
+
+```
+yarn link
+cd ../cardstack-documentation
+yarn link guidemaker-cardstack-template
+ember serve
 ```
 
 
-Usage
+Recent changes
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Notable differences from the default template include:
+- increased use of style variables
+- adding the Cardstack color theme
+- Hacking in subgroups within the Table of Contents (see note)
+
+The base template only supports nesting one level deep, so we have a cosmetic,
+hard coded subgroup. To add items, specify them in `page-grouping.js`.
+More instructions are in the code comments there.
 
 
 License

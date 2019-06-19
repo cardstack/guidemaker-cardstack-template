@@ -2,16 +2,16 @@
 {{#each data as |page|}}
   {{#unless (or page.skipToc (get page 'skip-toc'))}}
     {{#if (page-grouping page)}}
-    <li class="toc-subgroup">
-      {{page-grouping page}}
-      <hr>
-    </li>
+      <li class="toc-subgroup">
+        {{page-grouping page}}
+        <hr>
+      </li>
     {{/if}}
     <li class="{{tocLevel}} {{if (eq currentPage.url page.url) 'selected'}}">
       {{#if page.pages}}
         {{#cp-panel open=(unless guidemaker.collapseToc true (eq currentSection.id page.id)) as |p|}}
           {{#if fastboot.isFastBoot}}
-            {{#link-to 'version.show' page.id activeClass="selected" class="cp-Panel-toggle" data-test-toc-link=page.title}}
+            {{#link-to "version.show" page.id activeClass="selected" class="cp-Panel-toggle" data-test-toc-link=page.title}}
               {{page.title}}
             {{/link-to}}
           {{else}}
@@ -25,7 +25,7 @@
           {{/p.body}}
         {{/cp-panel}}
       {{else}}
-        {{#link-to 'version.show' page.url activeClass="selected" data-test-toc-link=page.title}}
+        {{#link-to "version.show" page.url activeClass="selected" data-test-toc-link=page.title}}
           {{page.title}}
         {{/link-to}}
       {{/if}}
