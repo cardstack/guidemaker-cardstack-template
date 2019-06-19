@@ -1,3 +1,5 @@
+@import '_variables';
+
 .not-responsive .footer > .container {
   width: 960px;
 }
@@ -10,9 +12,9 @@
 }
 
 .footer {
-  background-color: #f2ece9;
-  border-top: 1px solid #f9e7e4;
-  border-top: 1px solid #e5dbd6;
+  background-color: $gray-lightest;
+  border-top: 1px solid $white;
+  border-top: 1px solid $gray-lightest;
   text-align: left;
 }
 

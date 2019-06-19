@@ -1,6 +1,7 @@
+@import '_variables';
+
 .header {
-    background: rgb(42,47,51);
-    background: linear-gradient(90deg, rgba(42,47,51,1) 0%, rgba(47,60,71,1) 64%, rgba(54,59,64,1) 100%);
+    background: $primary;
     nav {
       display: flex;
       align-items: center;

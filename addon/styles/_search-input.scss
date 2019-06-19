@@ -1,3 +1,5 @@
+@import '_variables';
+
 
 // Typography
 $base-font-family: 'Source Sans Pro', sans-serif;
@@ -22,20 +24,12 @@ $top-spacing: $base-spacing * 3.333; // 80px
 
 
 // Colors
-$ember-orange: #dd6a58;
-$light-brown: #b67d47;
-$brown: #865931;
-$medium-gray: #999;
-$dark-gray: #444545;
-$tan: #fffdf9;
-$white: #fff;
+$gray-darker: #444545;
 $black: #000;
-$creme: #FFFBF5;
-$linen: #f9e7e4;
 $near-black: #444;
 
-$base-background-color: #FDFDFD;
-$sidebar-background-color: #FFFDF9;
+$base-background-color: $white;
+$sidebar-background-color: $gray-lightest;
 
 // Code Highlighting
 $highlight-yellow: #F5E090;
@@ -45,13 +39,13 @@ $highlight-blue: #90D7F5;
 $highlight-cyan: #78CEC8;
 $highlight-added: #5D7D5D;
 $highlight-removed: #905454;
-$code-background: $dark-gray;
+$code-background: $gray-darker;
 $code-header-background: shade($code-background, 40%);
 // $code-line-number-background: mix($code-background, $code-header-background);
 
 $highlight-colors: (
   attribute-name: $highlight-red,
-  comment: $medium-gray,
+  comment: $gray-lighter,
   content: $highlight-cyan,
   function: $highlight-red,
   key: $highlight-red,
@@ -63,13 +57,13 @@ $highlight-colors: (
 
 // Font Colors
 $base-font-color: $near-black;
-$dark-font-color: $dark-gray;
-$light-font-color: $light-brown;
-$action-color: $ember-orange;
+$dark-font-color: $gray-darker;
+$light-font-color: $gray-lighter;
+$action-color: $primary;
 
 // Border
 $base-border-radius: 3px;
-$base-border-color: #F8E7CF;
+$base-border-color: $gray-lightest;
 $base-border: 1px solid $base-border-color;
 
 // Forms

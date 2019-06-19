@@ -1,3 +1,5 @@
+@import '_variables';
+
 @media only percy {
   .version-select {
     display: none;
@@ -40,20 +42,20 @@ label[for="toc-toggle"] {
 }
 
 label[for="toc-toggle"]:hover {
-  color: #dd6a58;
+  color: $primary;
 }
 
 label[for="toc-toggle"]:hover:after {
-  border-color: #dd6a58 transparent transparent transparent;
+  border-color: $gray-lighter transparent transparent transparent;
 }
 
 .toc-toggle:checked ~ label[for="toc-toggle"]:hover:after {
-  border-color: transparent transparent #dd6a58 transparent;
+  border-color: transparent transparent $gray-lighter transparent;
 }
 
 label[for="toc-toggle"]:after {
   content: '';
-  border-color: #b67d47 transparent transparent transparent;
+  border-color: $primary-lighter transparent transparent transparent;
   border-style: solid;
   border-width: 5px 4px 0 4px;
   height: 0;
@@ -66,7 +68,7 @@ label[for="toc-toggle"]:after {
 }
 
 .toc-toggle:checked ~ label[for="toc-toggle"]:after {
-  border-color: transparent transparent #b67d47 transparent;
+  border-color: transparent transparent $primary-lighter transparent;
   border-width: 0 4px 5px 4px;
 }
 @media screen and (min-width: 53.75em) {
@@ -76,7 +78,7 @@ label[for="toc-toggle"]:after {
 }
 
 .toc-container.versions {
-  border-top: 1px solid #F8E7CF;
+  border-top: 1px solid $gray-lighter;
 }
 
 .toc-container {
@@ -113,7 +115,7 @@ li.toc-level-0 {
   }
 
   .cp-Panel-toggle:hover {
-    color: darken(#9b2918, 5);
+    color: $primary;
   }
 }
 
@@ -123,7 +125,7 @@ li.toc-level-0 > div > a {
 }
 
 ol.toc-level-1 {
-  border-left: 1px solid #74B0CE;
+  border-left: 1px solid $blue-lighter;
   font-size: 0.9rem;
 }
 
@@ -138,7 +140,7 @@ ol.toc-level-1 li {
 
 ol.toc-level-1 li.selected,
 ol.toc-level-1 li:hover {
-  border-left-color: #74B0CE;
+  border-left-color: $blue-lighter;
 }
 
 ol.toc-level-1 li:hover {

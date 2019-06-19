@@ -1,3 +1,5 @@
+@import '_variables';
+
 div.filename {
   background-color: #292929;
 }
@@ -49,7 +51,7 @@ code {
 }
 
 code:not([class*="language-"]) {
-  background-color: #F8E7CF;
+  background-color: $gray-lightest;
   border-radius: 3px;
   font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
   font-size: 0.9em;
