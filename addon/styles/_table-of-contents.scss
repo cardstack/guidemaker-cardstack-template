@@ -119,6 +119,18 @@ li.toc-level-0 {
   }
 }
 
+.toc-subgroup {
+  margin-top: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $gray;
+  hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid $gray;
+  }
+}
+
 li.toc-level-0 > div > a {
   font-weight: bold;
   margin: 0.33em 0;
