@@ -14,7 +14,7 @@ export function pageGrouping(params/*, hash*/) {
   let page = params[0]['title']
   const groupings = [
     {title: "Getting Started", heading: "Card SDK"},
-    {title: "The Cardstack Hub", heading: "Developer Reference"},
+    {title: "Developer Cookbook", heading: "Developer Reference"},
     {title: "Design System", heading: "Principles"}
   ]
   for (let item of groupings) {
