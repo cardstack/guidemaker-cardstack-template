@@ -1520,6 +1520,12 @@ article.x404 img {
   text-decoration: none;
 }
 
+.banner {
+  padding: 20px;
+  text-align: center;
+  background-color: lighten($blue, 70%);
+}
+
 // @import "ember-power-select";
 @import "code-block-file-name";
 @import "prism-overrides";
