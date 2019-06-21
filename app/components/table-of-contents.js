@@ -11,10 +11,5 @@ export default Component.extend({
   tocLevel: computed('level', function() {
     return `toc-level-${this.level}`;
   }),
-  classNameBindings: ['tocLevel'],
-
-  init() {
-    this.set('guidemaker.collapseToc', true);
-    this._super(...arguments)
-  }
+  classNameBindings: ['tocLevel']
 });
