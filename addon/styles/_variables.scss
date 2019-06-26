@@ -4,12 +4,14 @@ $screen-lg: 992px;
 $screen-xl: 1200px;
 //colors (2 of 3)
 $primary: #361f72;
+$neon-purple: #6638ff;
+$neon-purple-text: #4F1AFF; // slightly darker for a11y
 $secondary: #4A4A4A;
 $secondary-light: #969696;
 $secondary-dark: #303030;
 $blue: #0c4c5d;
 $blue-lighter: #74B0CE;
-$black: #212121; //never pure black
+$black: #000;
 $white: #fdfdfd; //never pure white
 $success: green; //come back to these state colors and put proper colors in here
 $info: cornflowerblue;

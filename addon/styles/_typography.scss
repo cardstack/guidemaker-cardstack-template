@@ -1,0 +1,162 @@
+@import "variables";
+
+$default-font: "Karbon Regular", "Helvetica Neue", Arial, sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$serif-font: "SourceSerifPro", serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot?60624967");
+  src: url("../fonts/fontello.eot?60624967#iefix") format("embedded-opentype"),
+    url("../fonts/fontello.woff?60624967") format("woff"),
+    url("../fonts/fontello.ttf?60624967") format("truetype"),
+    url("../fonts/fontello.svg?60624967#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --karbon-regular: "Karbon Regular", Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --karbon-thin: "Karbon Thin", var(--karbon-regular); // including fallback fonts
+  --karbon-light: "Karbon Light", var(--karbon-regular);
+  --karbon-medium: "Karbon Medium", var(--karbon-regular);
+  --karbon-semibold: "Karbon Semibold", var(--karbon-medium);
+  --karbon-semibold-italic: "Karbon Semibold Italic", var(--karbon-semibold);
+  --karbon-bold: "Karbon Bold", var(--karbon-semibold);
+}
+
+@font-face {
+  font-family: "Karbon Thin";
+  src: url("../fonts/karbon-thin-webfont.eot");
+  src: url("../fonts/karbon-thin-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karbon-thin-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karbon Light";
+  src: url("../fonts/karbon-light-webfont.eot");
+  src: url("../fonts/karbon-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karbon-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karbon Regular";
+  src: url("../fonts/karbon-regular-webfont.eot");
+  src: url("../fonts/karbon-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karbon-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karbon Medium";
+  src: url("../fonts/karbon-medium-webfont.eot");
+  src: url("../fonts/karbon-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karbon-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karbon Semibold";
+  src: url("../fonts/karbon-semibold-webfont.eot");
+  src: url("../fonts/karbon-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karbon-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karbon Semibold Italic";
+  src: url("../fonts/Karbon-SemiboldItalic.otf");
+  // Needs the other file types too probably
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Karbon Bold";
+  src: url("../fonts/karbon-bold-webfont.eot");
+  src: url("../fonts/karbon-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/karbon-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSerifPro';
+	src: 	url('../fonts/SourceSerifPro-Regular.otf.woff2') format('woff2'),
+				url('../fonts/SourceSerifPro-Regular.otf.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: $default-font;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	color: $secondary;
+}
+
+a {
+  color: $neon-purple-text;
+  transition: color 0.1s linear;
+  text-decoration: underline;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: $primary;
+  cursor: pointer;
+}
+
+a:active {
+  outline: none;
+}
+
+hr {
+  border-bottom: 1px solid $blue-lighter;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+	font-family: $default-font;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 65px;
+	color: $neon-purple-text;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: $default-font;
+	font-weight: 700;
+	font-size: 23px;
+	line-height: 38px;
+	color: $black;
+}

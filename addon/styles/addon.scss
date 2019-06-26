@@ -1,90 +1,5 @@
 @import "variables";
-
-
-@font-face {
-  font-family: 'fontello';
-  src: url("../fonts/fontello.eot?60624967");
-  src: url("../fonts/fontello.eot?60624967#iefix") format("embedded-opentype"),url("../fonts/fontello.woff?60624967") format("woff"),url("../fonts/fontello.ttf?60624967") format("truetype"),url("../fonts/fontello.svg?60624967#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-:root {
-  --karbon-regular: 'Karbon Regular', Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --karbon-thin: 'Karbon Thin', var(--karbon-regular); // including fallback fonts
-  --karbon-light: 'Karbon Light', var(--karbon-regular);
-  --karbon-medium: 'Karbon Medium', var(--karbon-regular);
-  --karbon-semibold: 'Karbon Semibold', var(--karbon-medium);
-  --karbon-semibold-italic: 'Karbon Semibold Italic', var(--karbon-semibold);
-  --karbon-bold: 'Karbon Bold', var(--karbon-semibold);
-}
-
-
-@font-face {
-  font-family: 'Karbon Thin';
-  src: url('../fonts/karbon-thin-webfont.eot');
-  src: url('../fonts/karbon-thin-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/karbon-thin-webfont.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karbon Light';
-  src: url('../fonts/karbon-light-webfont.eot');
-  src: url('../fonts/karbon-light-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/karbon-light-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karbon Regular';
-  src: url('../fonts/karbon-regular-webfont.eot');
-  src: url('../fonts/karbon-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/karbon-regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karbon Medium';
-  src: url('../fonts/karbon-medium-webfont.eot');
-  src: url('../fonts/karbon-medium-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/karbon-medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karbon Semibold';
-  src: url('../fonts/karbon-semibold-webfont.eot');
-  src: url('../fonts/karbon-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/karbon-semibold-webfont.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karbon Semibold Italic';
-  src: url('../fonts/Karbon-SemiboldItalic.otf');
-  // Needs the other file types too probably
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Karbon Bold';
-  src: url('../fonts/karbon-bold-webfont.eot');
-  src: url('../fonts/karbon-bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/karbon-bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-body {
-  font-family: "Karbon Regular", "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
+@import "typography";
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -1043,45 +958,6 @@ h6 code {
   text-transform: none;
 }
 
-
-p {
-  margin: 1.5em 0 0.75em;
-  line-height: 1.5em;
-}
-
-a {
-  color: #4E555C;
-  transition: color 0.1s linear;
-  text-decoration: underline;
-}
-
-a:active,
-a:focus,
-a:hover {
-  color: $primary;
-  cursor: pointer;
-}
-
-a:active {
-  outline: none;
-}
-
-hr {
-  border-bottom: 1px solid $blue-lighter;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  margin: 1.5em 0;
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
 .ds-dropdown-menu {
   background-color: #FFF;
   border-radius: 4px;
@@ -1294,7 +1170,7 @@ body {
     margin-right: 2.35765%;
     width: 27.49666%;
     border-bottom: 0;
-    padding: 3em 1.618em 3em 0;
+    padding: 1em 1.618em 3em 0;
   }
 
   .sidebar:last-child {
@@ -1320,7 +1196,7 @@ body {
 }
 
 article {
-  padding: 3em 0;
+  padding: 1em 0;
   @media screen and (min-width: 53.75em) {
     float: left;
     display: block;
@@ -1595,8 +1471,8 @@ article.x404 img {
 }
 
 .banner {
-  padding: 20px;
-  text-align: center;
+  padding: 10px 20px;
+  margin-top: 10px;
   background-color: lighten($blue, 70%);
 }
 

@@ -10,6 +10,16 @@
   }
 }
 
+.toc-level-0 a {
+  color: $secondary;
+  font-family: "Karbon Semibold";
+}
+
+.toc-level-1 a {
+  font-family: "Karbon Regular";
+  font-size: 20px;
+}
+
 .anchorable-toc {
   position: relative;
   margin-left: -22px;
@@ -18,21 +28,6 @@
 
 .anchorable-toc:hover a.toc-anchor {
   display: block;
-}
-
-a.toc-anchor {
-  display: none;
-  position: absolute;
-  text-decoration: none;
-  border: none;
-  width: 30px;
-  height: 13px;
-  background: url("../images/link.png") no-repeat;
-  background-size: 18px 9px;
-  left: 0;
-  opacity: 0.5;
-  top: 50%;
-  margin-top: -5px;
 }
 
 label[for="toc-toggle"] {
@@ -84,6 +79,7 @@ label[for="toc-toggle"]:after {
 .toc-container {
   overflow: hidden;
   display: none;
+  font-family: "Karbon Regular";
 }
 
 .toc-toggle:checked ~ .toc-container {
@@ -145,13 +141,12 @@ ol.toc-level-1 {
 // }
 
 ol.toc-level-1 li {
-  border-left: 3px solid transparent;
-  transition: border-width 200ms, margin-right 200ms;
+  border-left: 10px solid transparent;
 }
 
 ol.toc-level-1 li.selected,
 ol.toc-level-1 li:hover {
-  border-left-color: $blue-lighter;
+  color: $neon-purple-text;
 }
 
 ol.toc-level-1 li:hover {
@@ -159,13 +154,7 @@ ol.toc-level-1 li:hover {
   margin-right: -3px;
 }
 
-ol.toc-level-1 a {
-  color: #444;
-  padding: 0.33em 0 0.33em 1.618em;
-  display: block;
-  line-height: 1.25;
-}
-
-ol.toc-level-1 .selected a {
+ol.toc-level-1 .selected a, ol.toc-level-1 .selected a:hover {
   font-weight: 500;
+  color: $neon-purple-text;
 }
