@@ -1209,15 +1209,16 @@ article {
 }
 
 article .edit-page {
-  height: 18px;
-  width: 24px;
-  color: $primary-lighter;
+  height: 30px;
+  width: 100px;
+  color: lighten($neon-purple-text, 15%);
   display: inline-block;
   float: right;
   font-size: 1rem;
-  margin: 0.5em 0 0;
-  opacity: 0.4;
+  // margin: 0.5em 0 0;
+  opacity: 0.7;
   overflow: hidden;
+  text-decoration: none;
 }
 
 article .edit-page:hover {
