@@ -106,6 +106,7 @@ label[for="toc-toggle"]:after {
 
 .toc-container a {
   text-decoration: none;
+  line-height: 24px;
 }
 
 li.toc-level-0 {
@@ -116,7 +117,6 @@ li.toc-level-0 {
   .cp-Panel-toggle {
     display: block;
     line-height: 1.25;
-    padding: 0.33em 0;
   }
 
   .cp-Panel-toggle:hover {
