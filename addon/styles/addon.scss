@@ -1211,7 +1211,7 @@ article {
 article .edit-page {
   height: 30px;
   width: 100px;
-  color: lighten($neon-purple-text, 15%);
+  color: $neon-purple-text;
   display: inline-block;
   float: right;
   font-size: 1rem;

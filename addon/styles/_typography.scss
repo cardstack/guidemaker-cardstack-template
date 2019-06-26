@@ -108,7 +108,7 @@ body {
   font-family: $default-font;
 	font-weight: 400;
 	font-size: 20px;
-	line-height: 32px;
+	line-height: 28px;
 	color: $secondary;
 }
 
@@ -145,18 +145,24 @@ strong {
 }
 
 h1 {
-	font-family: $default-font;
+	font-family: "Karbon Semibold";
 	font-weight: 400;
 	font-size: 44px;
 	line-height: 65px;
 	color: $neon-purple-text;
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h2 {
 	font-family: $default-font;
 	font-weight: 700;
 	font-size: 23px;
-	line-height: 38px;
-	color: $black;
+  color: $black;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+p {
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
 }

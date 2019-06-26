@@ -50,7 +50,9 @@ export default Component.extend({
         let link = document.createElement('a');
         link.className = 'toc-anchor';
         link.href = `#${element.id}`;
-        element.insertBefore(link, element.firstElementChild);
+        link.innerText = element.textContent;
+        element.innerText = '';
+        element.appendChild(link, element.firstElementChild);
       }
     }
 

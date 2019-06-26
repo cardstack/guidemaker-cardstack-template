@@ -22,7 +22,6 @@ pre[class*="language-"] {
 }
 
 .filename > span {
-  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
   font-size: 0.8em;
   color: lightgrey;
   display: block;
@@ -53,7 +52,6 @@ code {
 code:not([class*="language-"]) {
   background-color: $gray-lightest;
   border-radius: 3px;
-  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
   font-size: 0.9em;
   padding: 0.2em 0.5em;
   margin: 0 0.1em;

@@ -24,6 +24,15 @@
   position: relative;
   margin-left: -22px;
   padding-left: 22px;
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 38px;
+    transition: none;
+  }
 }
 
 .anchorable-toc:hover a.toc-anchor {
@@ -119,7 +128,7 @@ li.toc-level-0 {
   margin-top: 2em;
   font-size: 1.2em;
   font-weight: bold;
-  color: $gray-lighter;
+  color: $gray;
   hr {
     margin-top: 5px;
     margin-bottom: 5px;
