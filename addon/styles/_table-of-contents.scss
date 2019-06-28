@@ -17,7 +17,6 @@
 
 .toc-level-1 a {
   font-family: "Karbon Regular";
-  font-size: 20px;
 }
 
 .anchorable-toc {
@@ -29,7 +28,6 @@
     text-decoration: none;
     color: $black;
     font-weight: 700;
-    font-size: 23px;
     line-height: 38px;
     transition: none;
   }
@@ -37,7 +35,6 @@
 
 label[for="toc-toggle"] {
   cursor: pointer;
-  font-size: 1.25em;
   position: relative;
 }
 
@@ -85,7 +82,7 @@ label[for="toc-toggle"]:after {
   overflow: hidden;
   display: none;
   font-family: "Karbon Regular";
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .toc-toggle:checked ~ .toc-container {
@@ -123,7 +120,6 @@ li.toc-level-0 {
 
 .toc-subgroup {
   margin-top: 2em;
-  font-size: 1.2em;
   font-weight: bold;
   color: $gray;
   hr {
@@ -136,10 +132,6 @@ li.toc-level-0 {
 li.toc-level-0 > div > a {
   font-weight: bold;
   margin: 0.33em 0;
-}
-
-ol.toc-level-1 {
-  font-size: 0.9rem;
 }
 
 // ol.toc-level-1:not(.selected) {
