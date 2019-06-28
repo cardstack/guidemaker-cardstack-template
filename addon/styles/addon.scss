@@ -1135,7 +1135,7 @@ body {
 }
 
 .container {
-  max-width: 80em;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1em;
@@ -1212,7 +1212,6 @@ article .edit-page {
   float: right;
   font-size: 1rem;
   // margin: 0.5em 0 0;
-  opacity: 0.7;
   overflow: hidden;
   text-decoration: none;
 }
@@ -1471,6 +1470,7 @@ article.x404 img {
   padding: 10px 20px;
   margin-top: 10px;
   background-color: lighten($blue, 70%);
+  text-align: center;
 }
 
 // @import "ember-power-select";

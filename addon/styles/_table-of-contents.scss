@@ -35,10 +35,6 @@
   }
 }
 
-.anchorable-toc:hover a.toc-anchor {
-  display: block;
-}
-
 label[for="toc-toggle"] {
   cursor: pointer;
   font-size: 1.25em;
@@ -89,6 +85,7 @@ label[for="toc-toggle"]:after {
   overflow: hidden;
   display: none;
   font-family: "Karbon Regular";
+  font-size: 0.8em;
 }
 
 .toc-toggle:checked ~ .toc-container {
