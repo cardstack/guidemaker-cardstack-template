@@ -36,6 +36,8 @@
 label[for="toc-toggle"] {
   cursor: pointer;
   position: relative;
+  font-size: 1.3em;
+  border-bottom: 1px solid $secondary;
 }
 
 label[for="toc-toggle"]:hover {
