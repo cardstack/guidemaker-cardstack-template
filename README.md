@@ -3,7 +3,7 @@ guidemaker-cardstack-template
 
 This addon handles style and layout of the cards.
 
-It is a modified fork of [guidemaker-cardstack-template](https://github.com/empress/guidemaker-cardstack-template)
+It is a modified fork of [guidemaker-default-template](https://github.com/empress/guidemaker-default-template)
 by Chris Manson.
 
 Installation
