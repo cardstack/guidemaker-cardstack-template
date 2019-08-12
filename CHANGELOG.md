@@ -1,3 +1,12 @@
+0.6.1 / 2019-08-12
+==================
+
+  * bugfix - mobile TOC was missing #6
+
+0.6.0
+==================
+
+  * customizing with Cardstack styles
 
 0.5.1 / 2019-02-11
 ==================
