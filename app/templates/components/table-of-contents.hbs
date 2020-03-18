@@ -3,7 +3,7 @@
   {{#unless (or page.skipToc (get page "skip-toc"))}}
     {{#if page.pages}}
       <li class="toc-group {{tocLevel}}">
-        {{#cp-panel open=(eq currentSection.id page.id) as |p|}}
+        {{#cp-panel open=true as |p|}}
           {{#if fastboot.isFastBoot}}
             {{#link-to "version.show" page.id activeClass="selected" class="cp-Panel-toggle" data-test-toc-link=page.title}}
               {{page.title}}
