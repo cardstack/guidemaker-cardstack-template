@@ -9,4 +9,5 @@ export default Component.extend({
     return `toc-level-${this.level}`;
   }),
   classNameBindings: ['tocLevel'],
+  tocTopicsOpen: true
 });
