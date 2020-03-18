@@ -1,0 +1,1 @@
+export { default } from 'guidemaker-cardstack-template/components/info-banner';

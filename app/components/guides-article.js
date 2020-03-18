@@ -1,26 +1,42 @@
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
+import { computed } from '@ember/object';
+
+function wrap(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+}
 
 export default Component.extend({
   tagName: 'article',
   classNames: 'chapter',
-  guidemaker: service(),
   page: service(),
+  guidemaker: service(),
+  editVersion: computed('version', 'currentVersion', function() {
+    if(this.page.currentVersion === 'release') {
+      return '';
+    }
+
+    if(this.version === this.currentVersion) {
+      return 'release/'
+    }
+
+    return `${this.page.currentVersion}/`;
+  }),
 
   didRender() {
-
-    let nodeList = this.$('pre:not(.no-line-numbers) > code');
+    let nodeList = this.element.querySelectorAll('pre:not(.no-line-numbers) > code');
 
     if (nodeList) {
-      nodeList.each((index, code) => {
+      nodeList.forEach((code) => {
         code.parentNode.classList.add('line-numbers');
       });
     }
 
-    let filenameNodeList = this.$('pre > code[data-filename]');
+    let filenameNodeList = this.element.querySelectorAll('pre > code[data-filename]');
 
     if (filenameNodeList) {
-      filenameNodeList.each((index, code) => {
+      filenameNodeList.forEach((code) => {
         if (code.parentNode.parentNode.classList.contains('filename')) {
           //do nothing
           return;
@@ -35,10 +51,18 @@ export default Component.extend({
           ext = match[1];
         }
 
-        this.$(code.parentNode).wrap(`<div class="filename ${ext}"></div>`);
+        let wrapper = document.createElement('div');
+        wrapper.className = `filename ${ext}`;
 
-        this.$(code.parentNode.parentNode).prepend(this.$(`<span>${code.attributes['data-filename'].value}</span>`));
-        this.$(code.parentNode.parentNode).prepend('<div class="ribbon"></div>');
+        let filenameSpan = document.createElement('span');
+        filenameSpan.innerText = code.attributes['data-filename'].value;
+
+        let ribbon = document.createElement('div');
+        ribbon.className = 'ribbon';
+
+        wrap(code.parentNode, wrapper);
+        code.parentNode.parentNode.prepend(filenameSpan);
+        code.parentNode.parentNode.prepend(ribbon);
       });
     }
 
@@ -50,9 +74,7 @@ export default Component.extend({
         let link = document.createElement('a');
         link.className = 'toc-anchor';
         link.href = `#${element.id}`;
-        link.innerText = element.textContent;
-        element.innerText = '';
-        element.appendChild(link, element.firstElementChild);
+        element.insertBefore(link, element.firstElementChild);
       }
     }
 
@@ -70,7 +92,7 @@ export default Component.extend({
      * e.g., data-diff="-4,+5,+6,+7"
      *
      **/
-    filenameNodeList.each((_, codeBlock) => {
+    filenameNodeList.forEach((codeBlock) => {
 
       let diffInfo = codeBlock.attributes['data-diff'] ? codeBlock.attributes["data-diff"].value.split(',') : [];
 
